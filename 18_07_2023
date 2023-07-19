@@ -1,0 +1,254 @@
+fun main() {  
+
+    do{ 
+
+    print("Hola bienvenido escoge una opción\n") 
+    print(" 1.Calcular el área de un triángulo.\n") 
+    print(" 2.Ingresar dos números por teclado y sumarlos.\n ") 
+    print("3.Ingresar un número y visualizar el número elevado al cuadrado.\n ") 
+    print("4.Escribir un algoritmo que convierta de euros a dólares.\n ") 
+    print("5.Allar el perimetro y el area de un cuadrado.\n ") 
+    print("6.Escribir un algoritmo que determine el área y el volúmen de un cilindro.\n ") 
+    print("7.Desifra el radio de una circunferencia la longitud y el área del círculo inscrito.\n ") 
+    print("8.Calcular el promedio de tres 3 números.\n ") 
+    print("9.saber si el número ingresado por teclado es positivo o negativo.\n") 
+    print("10.Digite dos numeros y te dice cual es el mayor el menor.\n") 
+    print("11.Digite tres numeros y te dice cual es el mayor el menor.\n")
+    print("12.Si el primer número es mallor sumarlo o si el segundo es menor restarlo.\n")
+    print("13.Allar el cociente entre dos números.\n")
+    print("14.Si uno de los números es negativo se suma y si ambos son positivos se multiplica.\n")
+
+    val choose:Int = readLine()!!.toInt()      
+        if(choose==1){ 
+
+        println("Calcular área del triángulo ")  
+
+        println("Ingresa la base: ")      
+
+        val base:Int = readLine()!!.toInt()  
+
+        println("Ingresa la altura: ")     
+
+        val height:Int = readLine()!!.toInt()  
+
+        var area = (base * height) /2    
+
+        println("El área es: $area \n")  
+
+        } 
+
+        else if(choose==2){ 
+
+        print("Digite un número ")     
+
+        val numE1:Int = readLine()!!.toInt() 
+
+        print("Digite otro número ")     
+
+        val numE2:Int = readLine()!!.toInt() 
+
+        var result=0 
+
+        result=numE1+numE2 
+
+        println("el resultado es "+result+"\n")  
+
+        } 
+
+        else if(choose==3){ 
+
+        print("Digite un número ")     
+
+        val numE2:Int = readLine()!!.toInt() 
+
+        var resultE2=0 
+
+        resultE2=numE2*numE2 
+
+        println("El resultado es "+resultE2+"\n") 
+
+        } 
+
+        else if(choose==4){ 
+
+        print("Digite la cantidad de euros ")     
+
+        val num1E3:Int = readLine()!!.toInt() 
+
+        var result1E3=0 
+
+        println("El resultado es ${num1E3*1.12} \n") 
+
+        } 
+
+        else if(choose==5){ 
+
+        print("Digite valor de un lado del cuadrado ")     
+
+        val side:Int = readLine()!!.toInt() 
+
+        var result1E4=0 
+
+        var perimeter=0 
+
+        result1E4=side*side 
+
+        perimeter=side+side+side+side 
+
+        println("El area es "+result1E4+" el perimetro es "+perimeter+"\n") 
+
+        } 
+
+        else if(choose==6){ 
+
+         
+
+        } 
+
+        else if(choose==7){ 
+
+         
+
+        } 
+
+        else if(choose==8){ 
+
+        print("Digite un número ")     
+
+        val not1:Int = readLine()!!.toInt() 
+
+        print("Digite otro número ")     
+
+        val not2:Int = readLine()!!.toInt() 
+
+        print("Digite otro número ")     
+
+        val not3:Int = readLine()!!.toInt() 
+
+        var resultaddition=not1+not2+not3 
+
+        var resultdiv=0 
+
+        resultdiv=resultaddition/3 
+
+        println("El resultado es "+resultdiv+"\n") 
+
+        } 
+
+        else if(choose==9){ 
+
+        print("Digite un número ")     
+
+        val part2:Int = readLine()!!.toInt() 
+
+        if(part2>=0){ 
+
+        println("El número "+part2+" es positivo \n") 
+
+        }else if(part2<0){ 
+
+        println("El número "+part2+" es negativo \n") 
+
+        } 
+
+        }else if(choose==10){ 
+        print("Digite un número ")     
+        val point2part1:Int = readLine()!!.toInt() 
+        print("Digite otro número ")     
+        val point2part2:Int = readLine()!!.toInt() 
+        if(point2part1>point2part2){ 
+        println("El número "+point2part1+" es el mayor y el número "+point2part2+" es el menor \n")
+        }else if(point2part2>point2part1){ 
+        println("El número "+point2part2+" es el mayor y el número "+point2part1+" es el menor \n ")
+        }else if(point2part1==point2part2){ 
+        println("Los números son iguales \n")} 
+        
+        }else if(choose==11){ 
+    print("Digite un número ")     
+        val num1part2:Int = readLine()!!.toInt() 
+        print("Digite otro número ")     
+        val num2part2:Int = readLine()!!.toInt() 
+        print("Digite otro número ")     
+        val num3part2:Int = readLine()!!.toInt() 
+        if(num1part2>num2part2 && num2part2>num3part2){ 
+        println("El número "+num1part2+" es el mayor y el número "+num3part2+" es el menor \n")
+        }else if(num1part2>num3part2 && num3part2>num2part2){ 
+        println("El número "+num1part2+" es el mayor y el número "+num2part2+" es el menor \n ")
+        }else if(num2part2>num1part2 && num1part2>num3part2){ 
+        println("El número "+num2part2+" es el mayor y el número "+num3part2+" es el menor \n ")} 
+        else if(num2part2>num3part2 && num3part2>num1part2){ 
+        println("El número "+num2part2+" es el mayor y el número "+num1part2+" es el menor \n")} 
+        else if(num3part2>num2part2 && num2part2>num1part2){ 
+        println("El número "+num3part2+" es el mayor y el número "+num1part2+" es el menor \n ")} 
+         else if(num3part2>num1part2 && num1part2>num2part2){ 
+        println("El número "+num3part2+" es el mayor y el número "+num1part2+" es el menor \n")} 
+        else if(num2part2==num1part2 && num2part2==num3part2){ 
+        println("Los números son iguales \n")}
+        
+        }else if(choose==12){
+            print("Digite un número ")     
+        val A:Int = readLine()!!.toInt() 
+        print("Digite otro número ")     
+        val B:Int = readLine()!!.toInt() 
+        if(A>B){ 
+        var subtractB=0
+        subtractB=A-B
+        println("Como el número "+B+" es el menor se resta y el resultado da "+subtractB+"\n")
+        }else if(B>A){
+        var additionA=0
+        additionA=A+B
+        println("Como el número "+A+" es el menor se suma y el resultado da "+additionA+"\n")
+        }
+        }else if(choose==13){
+        print("Digite un número ")     
+        val A2:Int = readLine()!!.toInt() 
+        print("Digite otro número ")     
+        val B2:Int = readLine()!!.toInt()
+        if(B2<0 || B2>0){
+        var resultaddition2=0
+        resultaddition2=A2/B2
+        println("El cociente de los numeros digitados es \n"+resultaddition2)
+        }else if(B2==0){
+            println("La divicion por cero no esta definida por lo tanto no es posible realizar la divición \n")
+        }
+        }else if(choose==14){
+        print("Digite un número ")     
+        val A3:Int = readLine()!!.toInt() 
+        print("Digite otro número ")     
+        val B3:Int = readLine()!!.toInt()
+        if(B3<0 || A3<0){
+        var resultaddition3=0
+        resultaddition3=A3+B3
+        println("El resultado es \n"+resultaddition3+"\n")
+        }else{
+        var multiplication3=0
+        multiplication3=A3*B3
+        println("El resultado es \n"+multiplication3+"\n")
+        }
+       /* }else if(choose==15){
+        print("Digite el un año ")     
+        val year:Int = readLine()!!.toInt() 
+        var leapYear=0
+        print("${year*%4}")
+            
+        }
+        else if(choose==16){
+        var num3part3 = 0
+        for(i in 1..10) {
+        var result45=0
+        result45=i * %3
+        println("numeros: $i")     
+        }*/
+        }
+
+         
+
+    println("\n Digite el numero 99 para finalizar o digite otro numero si desea volver a inicio") 
+
+    val option:Int = readLine()!!.toInt()      
+
+    }while(option==99) 
+
+    println("gracias por participar") 
+
+} 
