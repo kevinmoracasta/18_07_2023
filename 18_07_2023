@@ -18,6 +18,9 @@ fun main() {
     print("13.Allar el cociente entre dos números.\n")
     print("14.Si uno de los números es negativo se suma y si ambos son positivos se multiplica.\n")
     print("15.Saber si un año es bisiesto.\n")
+    print("16.Multiplos de 3 del 1 al 100.\n")
+    print("17.Números impares del 1 al 100.\n")
+    print("18.Números pares del 1 al 100.\n")
 
 
     val choose:Int = readLine()!!.toInt()      
@@ -233,7 +236,18 @@ fun main() {
 	    print("El año es bisiesto \n")
         else
 	    print("El año no es bisiesto \n")
-    
+        }else if(choose==16){
+            for(num in 3..3) {
+    println("Multiplos de $num: ")
+    for (num2 in 1..100) {
+        if (num2 % num == 0)  {
+            if (num % 3 == 0) {
+            }
+            print("$num2 ")
+        }
+    }
+
+        }
     
         }else if(choose==17)
         for (num in 1..100) {
