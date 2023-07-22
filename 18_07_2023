@@ -17,6 +17,8 @@ fun main() {
     print("12.Si el primer número es mallor sumarlo o si el segundo es menor restarlo.\n")
     print("13.Allar el cociente entre dos números.\n")
     print("14.Si uno de los números es negativo se suma y si ambos son positivos se multiplica.\n")
+    print("15.Saber si un año es bisiesto.\n")
+
 
     val choose:Int = readLine()!!.toInt()      
         if(choose==1){ 
@@ -224,21 +226,14 @@ fun main() {
         var multiplication3=0
         multiplication3=A3*B3
         println("El resultado es \n"+multiplication3+"\n")
-        }
-       /* }else if(choose==15){
-        print("Digite el un año ")     
-        val year:Int = readLine()!!.toInt() 
-        var leapYear=0
-        print("${year*%4}")
-            
-        }
-        else if(choose==16){
-        var num3part3 = 0
-        for(i in 1..10) {
-        var result45=0
-        result45=i * %3
-        println("numeros: $i")     
-        }*/
+        }}else if(choose==15){  
+        print("Digite un año ")  
+        val year:Int = readLine()!!.toInt()  
+        if ((year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0)))
+	    print("El año es bisiesto \n")
+        else
+	    print("El año no es bisiesto \n")
+    
         }
 
          
