@@ -22,6 +22,9 @@ fun main() {
     print("17.Números impares del 1 al 100.\n")
     print("18.Números pares del 1 al 100.\n")
     print("19.Cuadrados de los números del 1 al 100.\n")
+    print("20.Sumar los cuadradosde los primeros 100 números naturale.\n")
+    print("21.Mostrar los números en medio de los dos números digitados.\n")
+    print("22.Sumar lso números digitados menos 0.\n")
 
 
     val choose:Int = readLine()!!.toInt()      
@@ -271,7 +274,49 @@ fun main() {
             print("$total ")
 }
             
-        }
+        }else if(choose==20){ 
+            
+              for (num in 1..100) {
+                val operation=num*num
+                val suma=operation+operation
+                if(num==100){
+                    println("El resultado de la suma es $suma\n")
+                }
+            } 
+
+        } else if(choose==21){ 
+            println("Digite el número ")
+            val num1: Int = readLine()!!.toInt()
+            println("Digite otro número que sea mayor que el "+num1+"  número")
+            val num2: Int = readLine()!!.toInt()
+            var num = num1 + 1
+            println("Los números entre "+num1+" y "+num2+"\n")
+            while (num < num2) {
+                println("$num")
+                num++
+            }
+            if(num1>num2){
+                println("No se pudo hacer la operación")
+            }else if(num1==num2){
+                println("No se pudo hacer la operación")
+            }
+
+        }else if(choose==22){ 
+            var addition=0
+            println("Digita la cantidad de numeros que deseas sumar\n")
+            val values: Int = readLine()!!.toInt()
+            for(num in 1..values){
+                println("Digite numero $num que quiere sumar \n")
+                var num1: Int = readLine()!!.toInt()
+                while (num1 == 0) {
+                    println("Digite otro número que no sea 0 \n")
+                    num1 = readLine()!!.toInt()
+                }
+                addition=addition+num1 
+            }
+            println("El resultado de la suma es $addition\n")
+            }
+    
 
          
 
