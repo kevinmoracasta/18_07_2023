@@ -21,6 +21,7 @@ fun main() {
     print("16.Multiplos de 3 del 1 al 100.\n")
     print("17.Números impares del 1 al 100.\n")
     print("18.Números pares del 1 al 100.\n")
+    print("19.Cuadrados de los números del 1 al 100.\n")
 
 
     val choose:Int = readLine()!!.toInt()      
@@ -249,20 +250,27 @@ fun main() {
 
         }
     
-        }else if(choose==17)
+        }else if(choose==17){
         for (num in 1..100) {
     if (num % 2 == 0) {
         continue
     }
     print("$num ")
-
-        }else if(choose==18)
+}
+        }else if(choose==18){
         for(num in 2..2) {
     println("Multiplos de $num: ")
     for (num2 in 2..100) {
             print("$num2 ")
     }
-
+}
+        }else if(choose==19){
+        for (num2 in 1..100) {
+        var total=0
+        total= num2 * num2  
+            print("$total ")
+}
+            
         }
 
          
